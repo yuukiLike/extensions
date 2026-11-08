@@ -4,3 +4,10 @@ packages:
 allowBuilds:
   core-js: true
   esbuild: true
+
+# Keep patched transitive dependencies in the locked dependency tree.
+overrides:
+  nanoid@>=3.0.0 <3.3.18: 3.3.20
+  postcss@>=8.0.0 <8.5.23: 8.5.32
+  source-map-js@>=1.0.0 <1.2.2: 1.2.2
+  vite@>=7.0.0 <7.3.7: 7.3.7
